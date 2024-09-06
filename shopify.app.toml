@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "a9df68936183fab42a89ae4d67b30519"
+name = "test-node-react-shop"
+handle = "test-node-react-shop"
+application_url = "https://infinite-connecting-issn-pizza.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "test-store-danbackend.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://infinite-connecting-issn-pizza.trycloudflare.com/auth/callback",
+  "https://infinite-connecting-issn-pizza.trycloudflare.com/auth/shopify/callback",
+  "https://infinite-connecting-issn-pizza.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-07"
+
+[pos]
+embedded = false
